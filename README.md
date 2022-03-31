@@ -1,2 +1,2 @@
-# python_google
+# PythonFundamentals
 Curs Python - Google Atelierul Digital
