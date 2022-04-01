@@ -24,7 +24,6 @@ def main():
     print(f"Multipli de 3: {multiple_3_list}")
 
     # Afisare lista initiala
-    init_list = [7, 8, 9, 2, 3, 1, 4, 10, 5, 6]
     print(f"Lista initiala: {init_list}")
 
 
