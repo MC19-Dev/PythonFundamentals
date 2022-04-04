@@ -26,6 +26,11 @@ def main():
     # Afisare lista initiala
     print(f"Lista initiala: {init_list}")
 
+    dict = {'Numer': 'Ionescu', 'Prenume': 'Ion'}
+
+    print(dict.get('Nume'))
+    print(dict['Nume'])
+
 
 if __name__ == "__main__":
     main()
