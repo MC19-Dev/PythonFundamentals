@@ -14,22 +14,16 @@ def main():
     print(f"Lista ordonata descendent: {desc_list}")
 
     # Afisare numere pare din lista
-    print(f"Numerer pare:  {desc_list[::2]}")
+    print(f"Numere pare:  {asc_list[1::2]}")
 
     # Afisare numere impare din lista
-    print(f"Numere impare: {desc_list[1::2]}")
+    print(f"Numere impare: {asc_list[::2]}")
 
     # Afisare numerelor multipli de 3 din lista
-    multiple_3_list = [number for number in init_list if number % 3 == 0]
-    print(f"Multipli de 3: {multiple_3_list}")
+    print(f"Multipli de 3: {asc_list[2::3]}")
 
     # Afisare lista initiala
     print(f"Lista initiala: {init_list}")
-
-    dict = {'Numer': 'Ionescu', 'Prenume': 'Ion'}
-
-    print(dict.get('Nume'))
-    print(dict['Nume'])
 
 
 if __name__ == "__main__":
