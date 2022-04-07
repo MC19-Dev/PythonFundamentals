@@ -4,13 +4,11 @@ def main():
     print(f"Lista initiala: {init_list}")
 
     # Afisare lista ordonata ascendent
-    asc_list = list(init_list)
-    asc_list.sort()
+    asc_list = sorted(init_list)
     print(f"Lista ordonata ascendent:  {asc_list}")
 
     # Afisare lista ordonata descendent
-    desc_list = list(init_list)
-    desc_list.sort(reverse=True)
+    desc_list = sorted(init_list, reverse=True)
     print(f"Lista ordonata descendent: {desc_list}")
 
     # Afisare numere pare din lista
