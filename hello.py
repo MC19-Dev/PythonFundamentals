@@ -4,3 +4,6 @@ from mypackage.my_second_module import *
 if __name__ == '__main__':
     print(my_module_var)
     my_module_func()
+
+if __name__ == '__main__':
+    main()
