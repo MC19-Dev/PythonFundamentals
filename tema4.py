@@ -18,7 +18,7 @@ def main():
         if choice == 'd':
             print_names(filename)
 
-        choice = input('Doriti sa preluati alti jucatori? ').lower()[0]
+        choice = input('Doriti sa preluati alti jucatori?[d/n] ').lower()[0]
         if choice != 'd':
             break
 
