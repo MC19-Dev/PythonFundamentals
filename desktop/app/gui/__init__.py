@@ -10,7 +10,7 @@ class GUI:
         self.height = 650
 
         self.window = tkinter.Tk()
-        self.window.title("GAD 06 Desktop Apps")
+        self.window.title("GAD Desktop Apps")
         self.window.geometry(f'{self.width}x{self.height}')
         self.window.configure(background="#fff", padx=10, pady=10)
         self.content_frame = None
