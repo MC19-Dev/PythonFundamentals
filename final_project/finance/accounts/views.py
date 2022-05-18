@@ -20,7 +20,7 @@ def change_password(request):
                 request, 'Your password was successfully updated!')
             return redirect('/')
         else:
-            messages.error(request, 'Please correct the error below.')
+            messages.error(request, 'Please correct the errors below.')
     
     # User reached route via GET
     else:
