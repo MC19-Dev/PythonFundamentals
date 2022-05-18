@@ -17,24 +17,25 @@ def register_request(request):
             user = form.save()
             login(request, user)
             messages.success(request, "Registration successful!")
-            return redirect("/")
+            return redirect("/")    
         else:
-
             messages.error(
-                request, "Unsuccessful registration. Invalid information or weak password!")
+                request, "Unsuccessful registration!")
 
     # User reached route via GET
-    form = RegisterForm()
+    else:
+        form = RegisterForm()
+
     return render(request=request, template_name="registration/register.html", context={"form": form})
 
 
 def login_request(request):
 
     if request.method == "POST":
-        form = LoginForm(request, data=request.POST)
+        form = LoginForm(request.user, data=request.POST)
         if form.is_valid():
-            username = form.cleaned_data.get('username')
-            password = form.cleaned_data.get('password')
+            username = form.cleaned_data.get("username")
+            password = form.cleaned_data.get("password")
             user = authenticate(username=username, password=password)
             if user is not None:
                 login(request, user)
@@ -45,5 +46,8 @@ def login_request(request):
                 messages.error(request, "Invalid username or password!")
         else:
             messages.error(request, "Invalid username or password!")
-    form = LoginForm()
+
+    else:
+        form = LoginForm(request.user)
+
     return render(request=request, template_name="registration/login.html", context={"form": form})
