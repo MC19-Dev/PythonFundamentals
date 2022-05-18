@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 
-{% load static %}
 <html lang="en">
+
+{% load static %}
 
 <head>
 
@@ -17,9 +18,9 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"></script>
 
     <!-- https://favicon.io/emoji-favicons/money-bag/ -->
-    <link href="{% static 'images/favicon.ico' %}" rel="icon">
+    <link href="{% static '/images/favicon.ico' %}" rel="icon">
 
-    <link href="{% static 'styles.css' %}" rel="stylesheet">
+    <link href="{% static '/styles.css' %}" rel="stylesheet">
 
     <title>M$19 Finance: {% block title %}{% endblock %}</title>
 
@@ -78,7 +79,7 @@
 
     {% block errors %}
     {% endblock %}
-    
+
     <main class="container py-5 text-center">
         {% block main %}{% endblock %}
     </main>
